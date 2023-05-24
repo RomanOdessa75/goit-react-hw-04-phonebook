@@ -14,15 +14,6 @@ export const App = () => {
 
   const [filter, setFilter] = useState('');
 
-  // ====================================
-  // useEffect(() => {
-  //   window.localStorage.setItem('name', JSON.stringify(name));
-  // }, [name]);
-  // useEffect(() => {
-  //   window.localStorage.setItem('number', JSON.stringify(number));
-  // }, [number]);
-  // ====================================
-  // -------------------------------
   const [isAdded, setIsAdded] = useState(true);
 
   useEffect(() => {
@@ -41,7 +32,6 @@ export const App = () => {
       localStorage.setItem('contactList', JSON.stringify(contacts));
     }
   }, [contacts, isAdded]);
-  // ---------------------------------
 
   const handleChange = e => {
     const { value } = e.target;

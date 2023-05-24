@@ -19,9 +19,7 @@ export const PhonebookForm = ({ handleSubmit }) => {
 
   const handleFormSubmit = e => {
     e.preventDefault();
-    // const form = e.currentTarget;
     handleSubmit({ name: name, number: number });
-    // form.reset();
     setName('');
     setNumber('');
   };
